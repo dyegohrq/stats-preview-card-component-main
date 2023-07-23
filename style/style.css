@@ -32,7 +32,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-size: 15px;
-    background: var(--Very-dark-blue);
+    /* background: var(--Very-dark-blue); */
     position: relative;
 }
 
@@ -43,7 +43,6 @@ main {
     max-width: 1440px;
     height: 350px;
     background: var(--Dark-desaturated-blue);
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     top: 50%;
@@ -53,14 +52,17 @@ main {
 }
 
 .left {
-    width: 100%;
+    width: 50%;
     height: 100%;
-    
+    display: block;
 }
 
 .rigth {
-    width: 80%;
+    width: 50%;
     height: 100%;
+    background: linear-gradient(320deg,#ff61f3 0,#b86ffb 100%);
     background-image: url(../images/image-header-desktop.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
 }
