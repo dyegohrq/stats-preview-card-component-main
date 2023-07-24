@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--font-inter);
-    font-weight: 400;
+    font-weight: 700;
     color: var(--White);
 }
 
@@ -108,7 +108,20 @@ body {
     color: var(--Slightly-transparent-white);
     margin-top: 5px;
     font-size: 10px;
+    font-weight: 400;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
+
+    .conteiner {
+        display: flex;
+        min-width: 750px;
+        position: absolute;
+        flex-direction: row-reverse;
+    }
+
+    
 }
 
 
