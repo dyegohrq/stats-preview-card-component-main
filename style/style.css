@@ -17,7 +17,9 @@
     --Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
 
     --font-inter: 'Inter', sans-serif;
+    /* - Weights: 400, 700 */
     --font-lexend: 'Lexend Deca', sans-serif;
+    /* - Weights: 400 */
 }
 
 /* - Font size: 15px */
@@ -64,5 +66,27 @@ body {
     opacity: .75;
     mix-blend-mode: multiply;
     object-fit: cover;
+}
+
+.card {
+    padding: 48px;
+    text-align: center;
+}
+
+.card h1 {
+    font-family: var(--font-inter);
+    color: var(--White);
+}
+
+.card h1 span {
+    color: var(--Soft-violet);
+}
+
+.card p {
+    margin: 20px auto;
+    color: var(--Slightly-transparent-white);
+    font-family: var(--font-lexend);
+    font-weight: 400;
+    line-height: 25px;
 }
 
