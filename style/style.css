@@ -37,7 +37,6 @@ body {
     font-size: 15px;
     position: relative;
     background-color: var(--Very-dark-blue);
-    position: relative;
 }
 
 .conteiner {
@@ -66,6 +65,7 @@ body {
     opacity: .75;
     mix-blend-mode: multiply;
     object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card {
@@ -87,6 +87,6 @@ body {
     color: var(--Slightly-transparent-white);
     font-family: var(--font-lexend);
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
 }
 
