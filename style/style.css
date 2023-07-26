@@ -41,7 +41,7 @@ body {
 
 .conteiner {
     display: grid;
-    max-width: 699px;
+    min-width: 375px;
     position: absolute;
     top: 50%;
     left: 50%;
