@@ -1,0 +1,180 @@
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    
+    --Very-dark-blue: hsl(233, 47%, 7%); /* (main background) */
+    --Dark-desaturated-blue: hsl(244, 38%, 16%); /* (card background) */
+    --Soft-violet: hsl(277, 64%, 61%);/* (accent) */
+    
+    /* ### Neutral */
+    
+    --White: hsl(0, 0%, 100%); /* (main heading, stats) */
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);/* (main paragraph) */
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);/* (stat headings) */
+
+    /* Typography */
+    --font-family-inter: "Inter", serif;
+}
+
+/* General config */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--Very-dark-blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+    font-family: "Inter", serif;
+    font-family: "Lexend Deca", serif;
+*/
+
+.container {
+    background-color: var(--Dark-desaturated-blue);
+    width: 90%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.container .right {
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.container .right .img-hero {
+    background: url(../images/image-header-mobile.jpg) no-repeat top / cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container .right .bg-hero {
+    background-color: hsla(277, 64%, 61%, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        max-width: 1110px;
+    }
+
+    .container .right {
+        order: 2;
+        width: 50%;
+        height: 100%;
+    }
+
+    .container .right .img-hero {
+        background: url(../images/image-header-desktop.jpg) no-repeat center / cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* left */
+
+.container .left {
+    padding: 31px;
+    text-align: center;
+}
+
+.container .left .text-left h1 {
+    font-family: var(--font-family-inter);
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: var(--White);
+    margin-bottom: 16px;
+}
+
+.container .left .text-left h1 span {
+    color: var(--Soft-violet);
+}
+
+@media screen and (min-width: 768px) {
+    .container .left {
+        text-align: left;
+        width: 50%;
+        padding: 71px 95px 59px 72px;
+    }
+    
+    .container .left .text-left h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.container .left .text-left p {
+    font-family: var(--font-family-inter);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--Slightly-transparent-white);
+    margin-bottom: 40px;
+}
+
+.container .left .business , .container .left .business .bus {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .left .business {
+    gap: 24px;
+}
+
+.container .left .business .bus .nmb {
+    font-family: var(--font-family-inter); 
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--White);
+}
+
+.container .left .business .bus .txt {
+    font-family: "Lexend Deca", serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: var(--Slightly-transparent-white);
+}
+
+@media screen and (min-width: 768px) {
+    .container .left .business {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.attribution { 
+    font-size: 14px; 
+    font-family: var(--font-family-inter);
+    text-align: center; 
+    margin-top: 15px;
+    color: var(--White);
+}
+.attribution a { 
+    color: var(--Soft-violet);
+    text-decoration: none; 
+}
